@@ -1,1 +1,1 @@
-# expense-tracker-python
+# expense-tracker
