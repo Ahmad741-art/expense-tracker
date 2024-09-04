@@ -1,0 +1,15 @@
+expenses = []
+
+def add_expense(amount, category):
+    expenses.append({"amount": amount, "category": category})
+
+def view_expenses():
+    total = 0
+    for expense in expenses:
+        print(f"Spent ${expense['amount']} on {expense['category']}")
+        total += expense['amount']
+    print(f"Total spending: ${total}")
+
+add_expense(50, "Groceries")
+add_expense(20, "Transport")
+view_expenses()
